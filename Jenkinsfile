@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Git Clone') {
             steps {
-                git 'https://github.com/Oren1984/hello-python.git'
+                sh 'git clone https://github.com/Oren1984/hello-python.git'
             }
         }
     }
